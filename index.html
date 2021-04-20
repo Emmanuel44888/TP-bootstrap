@@ -691,7 +691,7 @@
 <!-- EB Jumbotron -->
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1>Bootstrap - Bonus jeu</h1>
+      <h1>Bootstrap - Jumbotron - Bonus jeu</h1>
       <p>Jeu du nombre magique...</p>
     </div>
   </div>
@@ -737,8 +737,25 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-
-
+    <!-- EB- Date -->
+    <script language="JavaScript">
+ 
+ 
+        document.write("<font color='#000000' size='4' face='arial'>")
+        var mydate=new Date()
+        var year=mydate.getYear()
+        if (year<2000)
+        year += (year < 1900) ? 1900 : 0
+        var day=mydate.getDay()
+        var month=mydate.getMonth()
+        var daym=mydate.getDate()
+        if (daym<10)
+        daym="0"+daym
+        var dayarray=new Array("Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi")
+        var montharray=new Array(" janvier "," fevrier "," mars ","avril ","mai ","juin","juillet ","aout ","septembre "," octobre "," novembre "," décembre ")
+        document.write("   "+dayarray[day]+", "+daym+" "+montharray[month]+year+" ")
+        document.write("</b></i></font>")
+        </script>
 
 </body>
 
