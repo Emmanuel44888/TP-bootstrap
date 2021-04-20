@@ -269,5 +269,10 @@ document.getElementById("Aujourdhui").valueAsDate = new Date();
   });
 
 })(jQuery);
+
+// EB - Jeu du nombre magique
+
+
+// EB Jeu du nombre magique
   
   
